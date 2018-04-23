@@ -1,0 +1,376 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion></ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CB0EC4C6-468F-4F12-BD1E-DC236CEE845A}</ProjectGuid>
+    <ProjectTypeGuids>{E53F8FEA-EAE0-44A6-8774-FFD645390401};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MvcApp_Theme</RootNamespace>
+    <AssemblyName>MvcApp_Theme</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="DevExpress.Data.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxEditors.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxGridView.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxGridView.v11.2.Export, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxHtmlEditor.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxSpellChecker.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxThemes.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Web.Mvc.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Web.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.SpellChecker.v11.2.Core, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v11.2.Core, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v11.2.Web, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v11.2.Core, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v11.2.Extensions, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v11.2.Web, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v11.2.Core, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxPivotGrid.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxPivotGrid.v11.2.Export, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=3.0.0.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.3.0.50813.1\lib\net40\System.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.1.0.20105.408\lib\net40\System.Web.Helpers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.1.0.20105.408\lib\net40\System.Web.WebPages.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.1.0.20105.408\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.1.0.20105.408\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.1.0.20105.408\lib\net40\System.Web.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Code\Utils.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MyBinder.cs" />
+    <Compile Include="Models\ThemesModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\jquery-1.4.4.js" />
+    <Content Include="Scripts\jquery-1.4.4.min.js" />
+    <Content Include="Scripts\jquery-1.4.4-vsdoc.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery-ui.js" />
+    <Content Include="Scripts\jquery-ui.min.js" />
+    <Content Include="Scripts\MicrosoftAjax.js" />
+    <Content Include="Scripts\MicrosoftAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.debug.js" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\Aqua\MVCxButton.skin" />
+    <Content Include="App_Themes\Aqua\MVCxButtonEdit.skin" />
+    <Content Include="App_Themes\Aqua\MVCxCalendar.skin" />
+    <Content Include="App_Themes\Aqua\MVCxCallbackPanel.skin" />
+    <Content Include="App_Themes\Aqua\MVCxChartControl.skin" />
+    <Content Include="App_Themes\Aqua\MVCxCheckBox.skin" />
+    <Content Include="App_Themes\Aqua\MVCxCheckBoxList.skin" />
+    <Content Include="App_Themes\Aqua\MVCxColorEdit.skin" />
+    <Content Include="App_Themes\Aqua\MVCxComboBox.skin" />
+    <Content Include="App_Themes\Aqua\MVCxDateEdit.skin" />
+    <Content Include="App_Themes\Aqua\MVCxDropDownEdit.skin" />
+    <Content Include="App_Themes\Aqua\MVCxGridView.skin" />
+    <Content Include="App_Themes\Aqua\MVCxHtmlEditor.skin" />
+    <Content Include="App_Themes\Aqua\MVCxHyperLink.skin" />
+    <Content Include="App_Themes\Aqua\MVCxLabel.skin" />
+    <Content Include="App_Themes\Aqua\MVCxListBox.skin" />
+    <Content Include="App_Themes\Aqua\MVCxMemo.skin" />
+    <Content Include="App_Themes\Aqua\MVCxMenu.skin" />
+    <Content Include="App_Themes\Aqua\MVCxNavBar.skin" />
+    <Content Include="App_Themes\Aqua\MVCxPageControl.skin" />
+    <Content Include="App_Themes\Aqua\MVCxPivotGrid.skin" />
+    <Content Include="App_Themes\Aqua\MVCxPopupControl.skin" />
+    <Content Include="App_Themes\Aqua\MVCxProgressBar.skin" />
+    <Content Include="App_Themes\Aqua\MVCxRadioButton.skin" />
+    <Content Include="App_Themes\Aqua\MVCxRadioButtonList.skin" />
+    <Content Include="App_Themes\Aqua\MVCxReportToolbar.skin" />
+    <Content Include="App_Themes\Aqua\MVCxReportViewer.skin" />
+    <Content Include="App_Themes\Aqua\MVCxRoundPanel.skin" />
+    <Content Include="App_Themes\Aqua\MVCxSpinEdit.skin" />
+    <Content Include="App_Themes\Aqua\MVCxSplitter.skin" />
+    <Content Include="App_Themes\Aqua\MVCxTabControl.skin" />
+    <Content Include="App_Themes\Aqua\MVCxTextBox.skin" />
+    <Content Include="App_Themes\Aqua\MVCxTimeEdit.skin" />
+    <Content Include="App_Themes\Aqua\MVCxTrackBar.skin" />
+    <Content Include="App_Themes\Aqua\MVCxTreeView.skin" />
+    <Content Include="App_Themes\Aqua\MVCxUploadControl.skin" />
+    <Content Include="App_Themes\DevEx\MVCxButton.skin" />
+    <Content Include="App_Themes\DevEx\MVCxButtonEdit.skin" />
+    <Content Include="App_Themes\DevEx\MVCxCalendar.skin" />
+    <Content Include="App_Themes\DevEx\MVCxCallbackPanel.skin" />
+    <Content Include="App_Themes\DevEx\MVCxChartControl.skin" />
+    <Content Include="App_Themes\DevEx\MVCxCheckBox.skin" />
+    <Content Include="App_Themes\DevEx\MVCxCheckBoxList.skin" />
+    <Content Include="App_Themes\DevEx\MVCxColorEdit.skin" />
+    <Content Include="App_Themes\DevEx\MVCxComboBox.skin" />
+    <Content Include="App_Themes\DevEx\MVCxDateEdit.skin" />
+    <Content Include="App_Themes\DevEx\MVCxDropDownEdit.skin" />
+    <Content Include="App_Themes\DevEx\MVCxGridView.skin" />
+    <Content Include="App_Themes\DevEx\MVCxHtmlEditor.skin" />
+    <Content Include="App_Themes\DevEx\MVCxHyperLink.skin" />
+    <Content Include="App_Themes\DevEx\MVCxLabel.skin" />
+    <Content Include="App_Themes\DevEx\MVCxListBox.skin" />
+    <Content Include="App_Themes\DevEx\MVCxMemo.skin" />
+    <Content Include="App_Themes\DevEx\MVCxMenu.skin" />
+    <Content Include="App_Themes\DevEx\MVCxNavBar.skin" />
+    <Content Include="App_Themes\DevEx\MVCxPageControl.skin" />
+    <Content Include="App_Themes\DevEx\MVCxPivotGrid.skin" />
+    <Content Include="App_Themes\DevEx\MVCxPopupControl.skin" />
+    <Content Include="App_Themes\DevEx\MVCxProgressBar.skin" />
+    <Content Include="App_Themes\DevEx\MVCxRadioButton.skin" />
+    <Content Include="App_Themes\DevEx\MVCxRadioButtonList.skin" />
+    <Content Include="App_Themes\DevEx\MVCxReportToolbar.skin" />
+    <Content Include="App_Themes\DevEx\MVCxReportViewer.skin" />
+    <Content Include="App_Themes\DevEx\MVCxRoundPanel.skin" />
+    <Content Include="App_Themes\DevEx\MVCxSpinEdit.skin" />
+    <Content Include="App_Themes\DevEx\MVCxSplitter.skin" />
+    <Content Include="App_Themes\DevEx\MVCxTabControl.skin" />
+    <Content Include="App_Themes\DevEx\MVCxTextBox.skin" />
+    <Content Include="App_Themes\DevEx\MVCxTimeEdit.skin" />
+    <Content Include="App_Themes\DevEx\MVCxTrackBar.skin" />
+    <Content Include="App_Themes\DevEx\MVCxTreeView.skin" />
+    <Content Include="App_Themes\DevEx\MVCxUploadControl.skin" />
+    <Content Include="App_Themes\SoftOrange\MVCxButton.skin" />
+    <Content Include="App_Themes\SoftOrange\MVCxButtonEdit.skin" />
+    <Content Include="App_Themes\SoftOrange\MVCxCalendar.skin" />
+    <Content Include="App_Themes\SoftOrange\MVCxCallbackPanel.skin" />
+    <Content Include="App_Themes\SoftOrange\MVCxChartControl.skin" />
+    <Content Include="App_Themes\SoftOrange\MVCxCheckBox.skin" />
+    <Content Include="App_Themes\SoftOrange\MVCxCheckBoxList.skin" />
+    <Content Include="App_Themes\SoftOrange\MVCxColorEdit.skin" />
+    <Content Include="App_Themes\SoftOrange\MVCxComboBox.skin" />
+    <Content Include="App_Themes\SoftOrange\MVCxDateEdit.skin" />
+    <Content Include="App_Themes\SoftOrange\MVCxDropDownEdit.skin" />
+    <Content Include="App_Themes\SoftOrange\MVCxGridView.skin" />
+    <Content Include="App_Themes\SoftOrange\MVCxHtmlEditor.skin" />
+    <Content Include="App_Themes\SoftOrange\MVCxHyperLink.skin" />
+    <Content Include="App_Themes\SoftOrange\MVCxLabel.skin" />
+    <Content Include="App_Themes\SoftOrange\MVCxListBox.skin" />
+    <Content Include="App_Themes\SoftOrange\MVCxMemo.skin" />
+    <Content Include="App_Themes\SoftOrange\MVCxMenu.skin" />
+    <Content Include="App_Themes\SoftOrange\MVCxNavBar.skin" />
+    <Content Include="App_Themes\SoftOrange\MVCxPageControl.skin" />
+    <Content Include="App_Themes\SoftOrange\MVCxPivotGrid.skin" />
+    <Content Include="App_Themes\SoftOrange\MVCxPopupControl.skin" />
+    <Content Include="App_Themes\SoftOrange\MVCxProgressBar.skin" />
+    <Content Include="App_Themes\SoftOrange\MVCxRadioButton.skin" />
+    <Content Include="App_Themes\SoftOrange\MVCxRadioButtonList.skin" />
+    <Content Include="App_Themes\SoftOrange\MVCxReportToolbar.skin" />
+    <Content Include="App_Themes\SoftOrange\MVCxReportViewer.skin" />
+    <Content Include="App_Themes\SoftOrange\MVCxRoundPanel.skin" />
+    <Content Include="App_Themes\SoftOrange\MVCxSpinEdit.skin" />
+    <Content Include="App_Themes\SoftOrange\MVCxSplitter.skin" />
+    <Content Include="App_Themes\SoftOrange\MVCxTabControl.skin" />
+    <Content Include="App_Themes\SoftOrange\MVCxTextBox.skin" />
+    <Content Include="App_Themes\SoftOrange\MVCxTimeEdit.skin" />
+    <Content Include="App_Themes\SoftOrange\MVCxTrackBar.skin" />
+    <Content Include="App_Themes\SoftOrange\MVCxTreeView.skin" />
+    <Content Include="App_Themes\SoftOrange\MVCxUploadControl.skin" />
+    <Content Include="App_Themes\Youthful\MVCxButton.skin" />
+    <Content Include="App_Themes\Youthful\MVCxButtonEdit.skin" />
+    <Content Include="App_Themes\Youthful\MVCxCalendar.skin" />
+    <Content Include="App_Themes\Youthful\MVCxCallbackPanel.skin" />
+    <Content Include="App_Themes\Youthful\MVCxChartControl.skin" />
+    <Content Include="App_Themes\Youthful\MVCxCheckBox.skin" />
+    <Content Include="App_Themes\Youthful\MVCxCheckBoxList.skin" />
+    <Content Include="App_Themes\Youthful\MVCxColorEdit.skin" />
+    <Content Include="App_Themes\Youthful\MVCxComboBox.skin" />
+    <Content Include="App_Themes\Youthful\MVCxDateEdit.skin" />
+    <Content Include="App_Themes\Youthful\MVCxDropDownEdit.skin" />
+    <Content Include="App_Themes\Youthful\MVCxGridView.skin" />
+    <Content Include="App_Themes\Youthful\MVCxHtmlEditor.skin" />
+    <Content Include="App_Themes\Youthful\MVCxHyperLink.skin" />
+    <Content Include="App_Themes\Youthful\MVCxLabel.skin" />
+    <Content Include="App_Themes\Youthful\MVCxListBox.skin" />
+    <Content Include="App_Themes\Youthful\MVCxMemo.skin" />
+    <Content Include="App_Themes\Youthful\MVCxMenu.skin" />
+    <Content Include="App_Themes\Youthful\MVCxNavBar.skin" />
+    <Content Include="App_Themes\Youthful\MVCxPageControl.skin" />
+    <Content Include="App_Themes\Youthful\MVCxPivotGrid.skin" />
+    <Content Include="App_Themes\Youthful\MVCxPopupControl.skin" />
+    <Content Include="App_Themes\Youthful\MVCxProgressBar.skin" />
+    <Content Include="App_Themes\Youthful\MVCxRadioButton.skin" />
+    <Content Include="App_Themes\Youthful\MVCxRadioButtonList.skin" />
+    <Content Include="App_Themes\Youthful\MVCxReportToolbar.skin" />
+    <Content Include="App_Themes\Youthful\MVCxReportViewer.skin" />
+    <Content Include="App_Themes\Youthful\MVCxRoundPanel.skin" />
+    <Content Include="App_Themes\Youthful\MVCxSpinEdit.skin" />
+    <Content Include="App_Themes\Youthful\MVCxSplitter.skin" />
+    <Content Include="App_Themes\Youthful\MVCxTabControl.skin" />
+    <Content Include="App_Themes\Youthful\MVCxTextBox.skin" />
+    <Content Include="App_Themes\Youthful\MVCxTimeEdit.skin" />
+    <Content Include="App_Themes\Youthful\MVCxTrackBar.skin" />
+    <Content Include="App_Themes\Youthful\MVCxTreeView.skin" />
+    <Content Include="App_Themes\Youthful\MVCxUploadControl.skin" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\CalendarPartial.cshtml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49473</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl></IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl></CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+</Project>
