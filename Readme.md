@@ -1,3 +1,15 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [Utils.cs](./CS/MvcApp_Theme/Code/Utils.cs) (VB: [Utils.vb](./VB/MvcApp_Theme/Code/Utils.vb))
+* [HomeController.cs](./CS/MvcApp_Theme/Controllers/HomeController.cs) (VB: [HomeController.vb](./VB/MvcApp_Theme/Controllers/HomeController.vb))
+* [Global.asax.cs](./CS/MvcApp_Theme/Global.asax.cs) (VB: [Global.asax.vb](./VB/MvcApp_Theme/Global.asax.vb))
+* [MyBinder.cs](./CS/MvcApp_Theme/Models/MyBinder.cs) (VB: [MyBinder.vb](./VB/MvcApp_Theme/Models/MyBinder.vb))
+* [ThemesModel.cs](./CS/MvcApp_Theme/Models/ThemesModel.cs) (VB: [ThemesModel.vb](./VB/MvcApp_Theme/Models/ThemesModel.vb))
+* [CalendarPartial.cshtml](./CS/MvcApp_Theme/Views/Home/CalendarPartial.cshtml)
+* [Index.cshtml](./CS/MvcApp_Theme/Views/Home/Index.cshtml)
+* [_Layout.cshtml](./CS/MvcApp_Theme/Views/Shared/_Layout.cshtml)
+<!-- default file list end -->
 # How to change a theme on-the-fly
 
 
