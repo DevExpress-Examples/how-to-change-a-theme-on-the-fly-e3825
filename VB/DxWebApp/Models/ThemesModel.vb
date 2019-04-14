@@ -4,7 +4,7 @@ Namespace DxWebApp.Models
     Public Enum CommonThemes
         Moderno
         Material
-        MaterialCompact
+        iOS
     End Enum
 
     Public Class ThemesModel

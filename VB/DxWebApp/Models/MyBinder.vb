@@ -1,6 +1,7 @@
 ﻿Imports System
 Imports System.ComponentModel
-
+Imports System.Web.Mvc
+Imports DevExpress.Web.Mvc
 
 Namespace DxWebApp.Models
     Public Class MyEditorsBinder

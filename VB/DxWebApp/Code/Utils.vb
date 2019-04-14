@@ -15,7 +15,7 @@ Public NotInheritable Class Utils
 
     Private Sub New()
     End Sub
-    Private Const CurrentThemeCookieKey As String = "theme", CurrentThemeColorCookieKey As String = "themeColor", CurrentFontCookieKey As String = "utilsFont", DefaultTheme As String = "Moderno", DefaultThemeColor As String = "Blue", DefaultFont As String = "12px 'Times New Roman'"
+    Private Const CurrentThemeCookieKey As String = "ex3825_theme", CurrentThemeColorCookieKey As String = "ex3825_themeColor", CurrentFontCookieKey As String = "ex3825_utilsFont", DefaultTheme As String = "Moderno", DefaultThemeColor As String = "Blue", DefaultFont As String = "12px 'Times New Roman'"
 
     Private Shared ReadOnly Property Context() As HttpContext
         Get
