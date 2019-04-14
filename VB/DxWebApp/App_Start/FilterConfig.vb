@@ -1,4 +1,5 @@
 ﻿Imports System.Web
+Imports System.Web.Mvc
 
 Namespace DxWebApp
     Public Class FilterConfig
