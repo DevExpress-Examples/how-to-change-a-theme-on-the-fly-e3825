@@ -1,4 +1,7 @@
 # How to change a theme on-the-fly
+<!-- run online -->
+**[[Run Online]](https://codecentral.devexpress.com/e3825/)**
+<!-- run online end -->
 
 
 <p>This sample illustrates the possibility to change themes on-the-fly. The current theme is based on the Cookies value that is set in the client-side RadioButtonList.SelectedIndexChanged event handler. </p><p><strong>See also:</strong><br />
